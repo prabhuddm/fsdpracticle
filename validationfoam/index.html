@@ -17,18 +17,18 @@
 
             if (password.length < 6) {
                 alert("Password must be at least 6 characters long.");
-                return false;
+                return false;   
             }
-
-            // If validation passes, redirect to welcome page
-            window.location.href = "validateForm.html";
-            return false; // Prevent form submission for demo
+            else
+            {
+                true;
+            }
         }
     </script>
 </head>
 <body>
 
-    <form name="myForm" onsubmit="return validateform()">
+    <form onsubmit=" return validateform()" action="validateform.html">
         Name: <input type="text" id="name"><br><br>
         Password: <input type="password" id="password"><br><br>
         <input type="submit" value="Register">
